@@ -1,36 +1,18 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "buildCommand": "npm run build",
-=======
-  "framework": "vite",
-  "buildCommand": "npm run build",
-  "installCommand": "npm install",
->>>>>>> 2ce2e37 (Doing Changes)
-  "outputDirectory": "dist",
-  "env": {
-    "NODE_VERSION": "18.x",
-    "NODE_ENV": "production"
-  },
-  "github": {
-    "silent": true
-  },
-  "headers": [
+  "builds": [
     {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" },
-        { "key": "Cache-Control", "value": "public, max-age=31536000" }
-      ]
-    },
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
     {
-      "source": "/assets/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
-      ]
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
- 
