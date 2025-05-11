@@ -1,26 +1,26 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { lazy } from 'react'
-import MainLayout from '../layouts/MainLayout'
-import DashboardLayout from '../layouts/DashboardLayout'
-import ProtectedRoute from '../components/shared/ProtectedRoute'
-import AdminRoute from '../components/shared/AdminRoute'
+import MainLayout from '/src/layouts/MainLayout'
+import DashboardLayout from '/src/layouts/DashboardLayout'
+import ProtectedRoute from '/src/components/shared/ProtectedRoute'
+import AdminRoute from '/src/components/shared/AdminRoute'
 
 // Lazy-loaded pages
-const Home = lazy(() => import('../pages/Home'))
-const About = lazy(() => import('../pages/About'))
-const Contact = lazy(() => import('../pages/Contact'))
-const FAQ = lazy(() => import('../pages/FAQ'))
-const Login = lazy(() => import('../pages/Login'))
-const Register = lazy(() => import('../pages/Register'))
-const Dashboard = lazy(() => import('../pages/Dashboard'))
-const Licenses = lazy(() => import('../pages/Licenses'))
-const NewLicense = lazy(() => import('../pages/NewLicense'))
-const EditLicense = lazy(() => import('../pages/EditLicense'))
-const LicenseDetails = lazy(() => import('../pages/LicenseDetails'))
-const Profile = lazy(() => import('../pages/Profile'))
-const AdminDashboard = lazy(() => import('../pages/AdminDashboard'))
-const AdminUsers = lazy(() => import('../pages/AdminUsers'))
-const NotFound = lazy(() => import('../pages/NotFound'))
+const Home = lazy(() => import('/src/pages/Home'))
+const About = lazy(() => import('/src/pages/About'))
+const Contact = lazy(() => import('/src/pages/Contact'))
+const FAQ = lazy(() => import('/src/pages/FAQ'))
+const Login = lazy(() => import('/src/pages/Login'))
+const Register = lazy(() => import('/src/pages/Register'))
+const Dashboard = lazy(() => import('/src/pages/Dashboard'))
+const Licenses = lazy(() => import('/src/pages/Licenses'))
+const NewLicense = lazy(() => import('/src/pages/NewLicense'))
+const EditLicense = lazy(() => import('/src/pages/EditLicense'))
+const LicenseDetails = lazy(() => import('/src/pages/LicenseDetails'))
+const Profile = lazy(() => import('/src/pages/Profile'))
+const AdminDashboard = lazy(() => import('/src/pages/AdminDashboard'))
+const AdminUsers = lazy(() => import('/src/pages/AdminUsers'))
+const NotFound = lazy(() => import('/src/pages/NotFound'))
 
 export const router = createBrowserRouter([
   {
