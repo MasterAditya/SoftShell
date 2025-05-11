@@ -4,8 +4,12 @@
   "installCommand": "npm install",
   "outputDirectory": "dist",
   "framework": "vite",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
   "env": {
     "NODE_VERSION": "18.x",
-    "NODE_ENV": "production"
+    "NODE_ENV": "production",
+    "VITE_API_URL": "https://softshell-api.vercel.app"
   }
 }
