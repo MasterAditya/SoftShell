@@ -5,6 +5,7 @@
   "outputDirectory": "dist",
   "framework": "vite",
   "env": {
-    "NODE_VERSION": "18.x"
+    "NODE_VERSION": "18.x",
+    "NODE_ENV": "production"
   }
 }
