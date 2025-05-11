@@ -1,26 +1,25 @@
 import { createBrowserRouter } from 'react-router-dom'
-import { lazy } from 'react'
-import MainLayout from '/src/layouts/MainLayout'
-import DashboardLayout from '/src/layouts/DashboardLayout'
-import ProtectedRoute from '/src/components/shared/ProtectedRoute'
-import AdminRoute from '/src/components/shared/AdminRoute'
+import MainLayout from '../layouts/MainLayout.jsx'
+import DashboardLayout from '../layouts/DashboardLayout.jsx'
+import ProtectedRoute from '../components/shared/ProtectedRoute.jsx'
+import AdminRoute from '../components/shared/AdminRoute.jsx'
 
-// Lazy-loaded pages
-const Home = lazy(() => import('/src/pages/Home'))
-const About = lazy(() => import('/src/pages/About'))
-const Contact = lazy(() => import('/src/pages/Contact'))
-const FAQ = lazy(() => import('/src/pages/FAQ'))
-const Login = lazy(() => import('/src/pages/Login'))
-const Register = lazy(() => import('/src/pages/Register'))
-const Dashboard = lazy(() => import('/src/pages/Dashboard'))
-const Licenses = lazy(() => import('/src/pages/Licenses'))
-const NewLicense = lazy(() => import('/src/pages/NewLicense'))
-const EditLicense = lazy(() => import('/src/pages/EditLicense'))
-const LicenseDetails = lazy(() => import('/src/pages/LicenseDetails'))
-const Profile = lazy(() => import('/src/pages/Profile'))
-const AdminDashboard = lazy(() => import('/src/pages/AdminDashboard'))
-const AdminUsers = lazy(() => import('/src/pages/AdminUsers'))
-const NotFound = lazy(() => import('/src/pages/NotFound'))
+// Direct imports
+import Home from '../pages/Home.jsx'
+import About from '../pages/About.jsx'
+import Contact from '../pages/Contact.jsx'
+import FAQ from '../pages/FAQ.jsx'
+import Login from '../pages/Login.jsx'
+import Register from '../pages/Register.jsx'
+import Dashboard from '../pages/Dashboard.jsx'
+import Licenses from '../pages/Licenses.jsx'
+import NewLicense from '../pages/NewLicense.jsx'
+import EditLicense from '../pages/EditLicense.jsx'
+import LicenseDetails from '../pages/LicenseDetails.jsx'
+import Profile from '../pages/Profile.jsx'
+import AdminDashboard from '../pages/AdminDashboard.jsx'
+import AdminUsers from '../pages/AdminUsers.jsx'
+import NotFound from '../pages/NotFound.jsx'
 
 export const router = createBrowserRouter([
   {
