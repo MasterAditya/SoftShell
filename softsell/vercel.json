@@ -8,9 +8,6 @@
     "NODE_VERSION": "18.x",
     "NODE_ENV": "production"
   },
-  "github": {
-    "silent": true
-  },
   "headers": [
     {
       "source": "/(.*)",
